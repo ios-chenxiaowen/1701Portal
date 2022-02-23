@@ -1,0 +1,6 @@
+framework module Pods_1701Portal_1701PortalUITests {
+  umbrella header "Pods-1701Portal-1701PortalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
