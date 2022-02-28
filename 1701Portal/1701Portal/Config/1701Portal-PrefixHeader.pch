@@ -1,0 +1,37 @@
+//
+//  1701Portal-PrefixHeader.pch
+//  1701Portal
+//
+//  Created by ios小文 on 2022/2/28.
+//
+
+#ifndef _701Portal_PrefixHeader_pch
+#define _701Portal_PrefixHeader_pch
+
+#import "BaseModel.h"
+#import "BaseViewController.h"
+#import "BaseNavigationController.h"
+#import "BaseTabBarController.h"
+
+#import "Singleton.h"
+#import "ConstantsMacro.h"
+#import "UIConfigurationFile.h"
+#import "InterfaceConfigurationFile.h"
+#import "MJExtension.h"
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "SDWebImage.h"
+
+#import "CXUploadDataModel.h"
+
+
+
+//记录日志
+#if APILOG
+#define APILog(...) NSLog(__VA_ARGS__);
+#else
+#define APILog(...)
+#endif
+
+
+#endif /* _701Portal_PrefixHeader_pch */
