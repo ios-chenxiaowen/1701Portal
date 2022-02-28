@@ -27,7 +27,7 @@ DEPENDENCIES:
   - AFNetworking (~> 4.0.1)
   - IQKeyboardManager (= 4.0.10)
   - Masonry (= 1.0.2)
-  - MBProgressHUD (= 1.0.0)
+  - MBProgressHUD
   - MJExtension (= 3.0.13)
   - MJRefresh (= 3.1.12)
   - SDWebImage (= 5.0.2)
@@ -51,6 +51,6 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
 
-PODFILE CHECKSUM: 2049054312c20cd004c028fc34de7fd9eb4143d7
+PODFILE CHECKSUM: 7d120e37801d520b3845c156beb461c6a7ce3dfd
 
 COCOAPODS: 1.11.2

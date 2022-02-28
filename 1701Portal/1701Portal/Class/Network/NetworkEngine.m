@@ -150,7 +150,7 @@ static NSString *privateNetworkBaseUrl = @"";
 }
 
 #pragma mark newRequest
-+ (NSURLSessionDataTask *)requestDataWithAPI:(NSString *)apiPath
++ (void)requestDataWithAPI:(NSString *)apiPath
                                       method:(HttpMethod)method
                                       params:(NSDictionary *)params
                            customHeaderField:(NSDictionary *)customHeaderFields
@@ -158,7 +158,7 @@ static NSString *privateNetworkBaseUrl = @"";
                                      success:(SuccessBlock)success
                                      failure:(FailureBlock)failure {
     
-    return [NetworkEngine requestDataWithAPI:apiPath
+    [NetworkEngine requestDataWithAPI:apiPath
                                      method:method
                               isJsonRequest:NO params:params
                           customHeaderField:customHeaderFields
@@ -167,7 +167,7 @@ static NSString *privateNetworkBaseUrl = @"";
                                     failure:failure];
 }
 
-+ (NSURLSessionDataTask *)requestDataWithAPI:(NSString *)apiPath
++ (void)requestDataWithAPI:(NSString *)apiPath
                                       method:(HttpMethod)method
                                isJsonRequest:(BOOL)isJsonRequest
                                       params:(NSDictionary *)params
@@ -186,7 +186,6 @@ static NSString *privateNetworkBaseUrl = @"";
         if (failure) {
             NSError *error = [[NSError alloc] initWithDomain:@"无效地址" code:9999 userInfo:nil];
             failure(error);
-            return nil;
         }
     }
         
@@ -233,7 +232,7 @@ static NSString *privateNetworkBaseUrl = @"";
         case GET:
             APILog(@"==================================\nGET->%@\nParams:%@\n---------------------------------",apiPath,params);
         
-            return [manager GET:apiPath parameters:params headers:nil progress:theAFHRequestProgress success:theAFHTTPRequestSuccess failure:theAFHTTPRequestFailure];
+           [manager GET:apiPath parameters:params headers:nil progress:theAFHRequestProgress success:theAFHTTPRequestSuccess failure:theAFHTTPRequestFailure];
             break;
         case POST:
             if (isJsonRequest) {
@@ -241,17 +240,16 @@ static NSString *privateNetworkBaseUrl = @"";
             } else {
                 APILog(@"==================================\nPOST->%@\nParams:%@\n---------------------------------",apiPath,[params mj_JSONString]);
             }
-            return [manager POST:apiPath parameters:params headers:nil progress:theAFHRequestProgress success:theAFHTTPRequestSuccess failure:theAFHTTPRequestFailure];
+            [manager POST:apiPath parameters:params headers:nil progress:theAFHRequestProgress success:theAFHTTPRequestSuccess failure:theAFHTTPRequestFailure];
             break;
             
         default:
             break;
     }
-    return nil;
 }
 
 
-+ (NSURLSessionDataTask *)uploadFileAPI:(NSString *)apiPath
++ (void)uploadFileAPI:(NSString *)apiPath
                params:(NSDictionary *)params
                  data:(NSArray *)dataArray
     customHeaderField:(NSDictionary *)customHeaderFields
@@ -299,7 +297,7 @@ static NSString *privateNetworkBaseUrl = @"";
     };
     
     APILog(@"==================================\nPOST->%@\nParams:%@\n---------------------------------",apiPath,[params mj_JSONString]);
-    return [manager POST:apiPath parameters:params headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [manager POST:apiPath parameters:params headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         //在这个block 中上传文件数据
         //formData就是专门用于保存需要上传文件的二进制数据的
         /*

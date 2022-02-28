@@ -38,8 +38,8 @@
 #define MBHUD_Hide [MBProgressHUD hideAllHUDsForView:kKeyWindow animated:YES];
 
 
-#define MBHUD_result(string)       ([MBProgressHUD showError:string])
-#define MBHUD_resulterror ([MBProgressHUD showError:@"网络错误，请检查您的网络"])
+#define MBHUD_result(string)       ([MBProgressHUD cx_showInfoWithStatus:string])
+#define MBHUD_resulterror ([MBProgressHUD cx_showInfoWithStatus:@"网络错误，请检查您的网络"])
 
 
 #define USER_DEFAULT_SET(Object,Key) [[NSUserDefaults standardUserDefaults] setObject:Object forKey:Key]

@@ -21,6 +21,8 @@
 #import "Masonry.h"
 #import "AFNetworking.h"
 #import "SDWebImage.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+CXProgressHUD.h"
 
 #import "CXUploadDataModel.h"
 

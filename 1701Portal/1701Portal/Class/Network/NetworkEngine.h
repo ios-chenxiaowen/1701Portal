@@ -7,13 +7,14 @@
 
 #import <Foundation/Foundation.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 #define CXAPITimeOut 60
 
 typedef void (^SuccessBlock) (id result);
 typedef void (^FailureBlock) (NSError *error);
-typedef id (^ProcessResult) (id result);
+typedef id _Nullable (^ProcessResult) (id result);
 
 typedef enum _HttpMethod {
     GET = 0,
@@ -49,7 +50,7 @@ typedef enum _HttpMethod {
  *  @param method             请求类型(GET/POST)
  *  @param params             参数
  *  @param customHeaderFields 自定义请求头
- *  @param requesrProgress    请求进度回调
+ *  @param requestProgress    请求进度回调
  *  @param success            成功的回调
  *  @param failure            失败的回调
  */
@@ -69,11 +70,11 @@ typedef enum _HttpMethod {
  *  @param method             请求类型(GET/POST)
  *  @param params             参数
  *  @param customHeaderFields 自定义请求头
- *  @param requesrProgress    请求进度回调
+ *  @param requestProgress    请求进度回调
  *  @param success            成功的回调
  *  @param failure            失败的回调
  */
-+ (NSURLSessionDataTask *)requestDataWithAPI:(NSString *)apiPath
++ (void)requestDataWithAPI:(NSString *)apiPath
                                       method:(HttpMethod)method
                                       params:(NSDictionary *)params
                            customHeaderField:(NSDictionary *)customHeaderFields
@@ -89,11 +90,11 @@ typedef enum _HttpMethod {
  *  @param isJsonRequest      是否为json参数请求
  *  @param params             参数
  *  @param customHeaderFields 自定义请求头
- *  @param requesrProgress    请求进度回调
+ *  @param requestProgress    请求进度回调
  *  @param success            成功的回调
  *  @param failure            失败的回调
  */
-+ (NSURLSessionDataTask *)requestDataWithAPI:(NSString *)apiPath
++ (void)requestDataWithAPI:(NSString *)apiPath
                                       method:(HttpMethod)method
                                isJsonRequest:(BOOL)isJsonRequest
                                       params:(NSDictionary *)params
@@ -107,13 +108,13 @@ typedef enum _HttpMethod {
  *
  *  @param apiPath            接口名
  *  @param params             参数
- *  @param data               文件数据
+ *  @param dataArray               文件数据
  *  @param customHeaderFields 自定义请求头
- *  @param requesrProgress    请求进度回调
+ *  @param requestProgress    请求进度回调
  *  @param success            成功回调
  *  @param failure            失败回调
  */
-+ (NSURLSessionDataTask *)uploadFileAPI:(NSString *)apiPath
++ (void)uploadFileAPI:(NSString *)apiPath
                params:(NSDictionary *)params
                  data:(NSArray *)dataArray
     customHeaderField:(NSDictionary *)customHeaderFields

@@ -26,6 +26,8 @@
 		3B67942927CC7CCB00B936DE /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67942827CC7CCB00B936DE /* MessageViewController.m */; };
 		3B67942E27CCB33400B936DE /* NetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67942D27CCB33400B936DE /* NetworkEngine.m */; };
 		3B67943127CCBAB500B936DE /* CXUploadDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67943027CCBAB500B936DE /* CXUploadDataModel.m */; };
+		3B67943427CCBEA700B936DE /* NetworkEngine+NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67943327CCBEA700B936DE /* NetworkEngine+NetworkUtil.m */; };
+		3B67943727CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67943627CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m */; };
 		4E30E9086A3F04C66B2A6FF9 /* Pods_1701Portal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B68A95A8D39B2987FD77CA0 /* Pods_1701Portal.framework */; };
 		AD4A9427CF1DDDF02A461FA5 /* Pods_1701Portal_1701PortalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A50BB820CFC8F80C92BA12 /* Pods_1701Portal_1701PortalUITests.framework */; };
 		CB0C38D227D01178A40F366C /* Pods_1701PortalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9582CD62AB5CDBBEB742F4E1 /* Pods_1701PortalTests.framework */; };
@@ -92,6 +94,10 @@
 		3B67942D27CCB33400B936DE /* NetworkEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkEngine.m; sourceTree = "<group>"; };
 		3B67942F27CCBAB500B936DE /* CXUploadDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXUploadDataModel.h; sourceTree = "<group>"; };
 		3B67943027CCBAB500B936DE /* CXUploadDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXUploadDataModel.m; sourceTree = "<group>"; };
+		3B67943227CCBEA700B936DE /* NetworkEngine+NetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkEngine+NetworkUtil.h"; sourceTree = "<group>"; };
+		3B67943327CCBEA700B936DE /* NetworkEngine+NetworkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkEngine+NetworkUtil.m"; sourceTree = "<group>"; };
+		3B67943527CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CXProgressHUD.h"; sourceTree = "<group>"; };
+		3B67943627CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CXProgressHUD.m"; sourceTree = "<group>"; };
 		7B68A95A8D39B2987FD77CA0 /* Pods_1701Portal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1701Portal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		801A8BA9D3B3E5C8DE03675A /* Pods-1701PortalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1701PortalTests.release.xcconfig"; path = "Target Support Files/Pods-1701PortalTests/Pods-1701PortalTests.release.xcconfig"; sourceTree = "<group>"; };
 		9582CD62AB5CDBBEB742F4E1 /* Pods_1701PortalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1701PortalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +217,8 @@
 		3B6793BE27CC6F6F00B936DE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3B67943527CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.h */,
+				3B67943627CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -324,6 +332,8 @@
 			children = (
 				3B67942C27CCB33400B936DE /* NetworkEngine.h */,
 				3B67942D27CCB33400B936DE /* NetworkEngine.m */,
+				3B67943227CCBEA700B936DE /* NetworkEngine+NetworkUtil.h */,
+				3B67943327CCBEA700B936DE /* NetworkEngine+NetworkUtil.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -595,9 +605,11 @@
 				3B67940C27CC76CC00B936DE /* BaseModel.m in Sources */,
 				3B67942627CC7CBA00B936DE /* HomePageViewController.m in Sources */,
 				3B67940F27CC76F700B936DE /* BaseNavigationController.m in Sources */,
+				3B67943727CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m in Sources */,
 				3B67938927C5D6C600B936DE /* ViewController.m in Sources */,
 				3B67942E27CCB33400B936DE /* NetworkEngine.m in Sources */,
 				3B67940927CC76B900B936DE /* BaseViewController.m in Sources */,
+				3B67943427CCBEA700B936DE /* NetworkEngine+NetworkUtil.m in Sources */,
 				3B67941527CC773700B936DE /* BaseTabBarController.m in Sources */,
 				3B67938327C5D6C600B936DE /* AppDelegate.m in Sources */,
 				3B67939427C5D6C800B936DE /* main.m in Sources */,
