@@ -28,6 +28,9 @@
 		3B67943127CCBAB500B936DE /* CXUploadDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67943027CCBAB500B936DE /* CXUploadDataModel.m */; };
 		3B67943427CCBEA700B936DE /* NetworkEngine+NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67943327CCBEA700B936DE /* NetworkEngine+NetworkUtil.m */; };
 		3B67943727CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B67943627CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m */; };
+		3B9F8AC927CE104E00ACA161 /* PagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8AC827CE104E00ACA161 /* PagingViewController.m */; };
+		3B9F8ACC27CE10C500ACA161 /* PagingViewTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8ACB27CE10C500ACA161 /* PagingViewTableHeaderView.m */; };
+		3B9F8ACF27CE112700ACA161 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8ACE27CE112700ACA161 /* ListViewController.m */; };
 		4E30E9086A3F04C66B2A6FF9 /* Pods_1701Portal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B68A95A8D39B2987FD77CA0 /* Pods_1701Portal.framework */; };
 		AD4A9427CF1DDDF02A461FA5 /* Pods_1701Portal_1701PortalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A50BB820CFC8F80C92BA12 /* Pods_1701Portal_1701PortalUITests.framework */; };
 		CB0C38D227D01178A40F366C /* Pods_1701PortalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9582CD62AB5CDBBEB742F4E1 /* Pods_1701PortalTests.framework */; };
@@ -98,6 +101,12 @@
 		3B67943327CCBEA700B936DE /* NetworkEngine+NetworkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkEngine+NetworkUtil.m"; sourceTree = "<group>"; };
 		3B67943527CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CXProgressHUD.h"; sourceTree = "<group>"; };
 		3B67943627CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CXProgressHUD.m"; sourceTree = "<group>"; };
+		3B9F8AC727CE104E00ACA161 /* PagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingViewController.h; sourceTree = "<group>"; };
+		3B9F8AC827CE104E00ACA161 /* PagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagingViewController.m; sourceTree = "<group>"; };
+		3B9F8ACA27CE10C500ACA161 /* PagingViewTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingViewTableHeaderView.h; sourceTree = "<group>"; };
+		3B9F8ACB27CE10C500ACA161 /* PagingViewTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagingViewTableHeaderView.m; sourceTree = "<group>"; };
+		3B9F8ACD27CE112700ACA161 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		3B9F8ACE27CE112700ACA161 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		7B68A95A8D39B2987FD77CA0 /* Pods_1701Portal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1701Portal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		801A8BA9D3B3E5C8DE03675A /* Pods-1701PortalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1701PortalTests.release.xcconfig"; path = "Target Support Files/Pods-1701PortalTests/Pods-1701PortalTests.release.xcconfig"; sourceTree = "<group>"; };
 		9582CD62AB5CDBBEB742F4E1 /* Pods_1701PortalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1701PortalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +235,7 @@
 		3B6793BF27CC6F9300B936DE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3B9F8AC627CE101700ACA161 /* PagingViewController */,
 				3B67942B27CCADA100B936DE /* Network */,
 				3B67941A27CC7C4900B936DE /* Message */,
 				3B67941927CC7C3D00B936DE /* HomePage */,
@@ -336,6 +346,19 @@
 				3B67943327CCBEA700B936DE /* NetworkEngine+NetworkUtil.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		3B9F8AC627CE101700ACA161 /* PagingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B9F8AC727CE104E00ACA161 /* PagingViewController.h */,
+				3B9F8AC827CE104E00ACA161 /* PagingViewController.m */,
+				3B9F8ACA27CE10C500ACA161 /* PagingViewTableHeaderView.h */,
+				3B9F8ACB27CE10C500ACA161 /* PagingViewTableHeaderView.m */,
+				3B9F8ACD27CE112700ACA161 /* ListViewController.h */,
+				3B9F8ACE27CE112700ACA161 /* ListViewController.m */,
+			);
+			path = PagingViewController;
 			sourceTree = "<group>";
 		};
 		47B89EB3A2A562AEE212911A /* Frameworks */ = {
@@ -600,11 +623,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B67942327CC7CA800B936DE /* UserAccountViewController.m in Sources */,
+				3B9F8ACC27CE10C500ACA161 /* PagingViewTableHeaderView.m in Sources */,
+				3B9F8ACF27CE112700ACA161 /* ListViewController.m in Sources */,
 				3B67942927CC7CCB00B936DE /* MessageViewController.m in Sources */,
 				3B67943127CCBAB500B936DE /* CXUploadDataModel.m in Sources */,
 				3B67940C27CC76CC00B936DE /* BaseModel.m in Sources */,
 				3B67942627CC7CBA00B936DE /* HomePageViewController.m in Sources */,
 				3B67940F27CC76F700B936DE /* BaseNavigationController.m in Sources */,
+				3B9F8AC927CE104E00ACA161 /* PagingViewController.m in Sources */,
 				3B67943727CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m in Sources */,
 				3B67938927C5D6C600B936DE /* ViewController.m in Sources */,
 				3B67942E27CCB33400B936DE /* NetworkEngine.m in Sources */,

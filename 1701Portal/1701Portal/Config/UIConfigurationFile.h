@@ -97,8 +97,8 @@
 #define IS_SAFETY (iPhoneX? 34 : 0)
 
 //获取当前设备屏幕的物理尺寸
-#define kScreenHeights ([UIScreen mainScreen].bounds.size.height)
-#define kScreenWidths ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
 
 //数组是否为空
 #define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
