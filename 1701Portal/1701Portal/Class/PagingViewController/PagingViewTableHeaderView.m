@@ -7,6 +7,7 @@
 
 #import "PagingViewTableHeaderView.h"
 
+
 @interface PagingViewTableHeaderView()
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, assign) CGRect imageViewFrame;

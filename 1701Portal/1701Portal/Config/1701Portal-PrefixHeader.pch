@@ -26,6 +26,8 @@
 
 #import "CXUploadDataModel.h"
 
+#import <AlipaySDK/AlipaySDK.h>
+
 
 
 //记录日志
