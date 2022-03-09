@@ -6,12 +6,13 @@
 //
 
 #import "HomePageViewController.h"
+#import "HomePageCollectionViewCell.h"
+#import "HomePageHeaderCollectionReusableView.h"
 
-@interface HomePageViewController ()
-@property (nonatomic, strong)UIScrollView * scrollview;
-@property (nonatomic, strong)UIView * contentView;
-@property (nonatomic, strong)UIView * view1;
-@property (nonatomic, strong)UIView * view2;
+@interface HomePageViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@property (nonatomic,strong) UICollectionView * collectionView;
+@property (nonatomic,strong) NSArray * titleArray;
+@property (nonatomic,strong) NSArray * imagesURLStrings;
 @end
 
 @implementation HomePageViewController
@@ -19,79 +20,91 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = UIColor.redColor;
-    [self createUI];
+//    self.view.backgroundColor = UIColor.redColor;
+    self.titleArray = @[@"LIVEHOUSE",@"乐器行",@"排练/录音",@"音乐学校",@"RECORDS"];
+    self.imagesURLStrings = @[
+                           @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
+                           @"https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg",
+                           @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg"
+                           ];
+    
+    [self.view addSubview:self.collectionView];
 }
-- (void)createUI {
-    [self.view addSubview:self.scrollview];
-    [self.scrollview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.mas_equalTo(0);
-    }];
-    [self.scrollview addSubview:self.contentView];
-    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.mas_equalTo(0);
-        make.width.equalTo(self.scrollview.mas_width);
-    }];
-    
-    [self.contentView addSubview:self.view1];
-    [self.view1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.mas_equalTo(0);
-        make.height.mas_equalTo(400);
-    }];
-    [self.contentView addSubview:self.view2];
-    [self.view2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.equalTo(self.view1.mas_bottom);
-        make.height.mas_equalTo(400);
-        make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(0);
-    }];
-    
-    
-    
-    
-    
-}
+//- (void)buildView {
+//
+//    
+//    
+//    
+//    
+//    
+//}
 
 
-- (UIView *)view1 {
-    if (_view1 == nil) {
-        _view1 = [[UIView alloc] init];
-        _view1.backgroundColor = UIColor.redColor;
+
+
+#pragma mark UICollectionView
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.titleArray.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    HomePageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomePageCollectionViewCell" forIndexPath:indexPath];
+    cell.titleLab.text = self.titleArray[indexPath.row];
+    return cell;
+}
+///分区头
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        HomePageHeaderCollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HomePageHeaderCollectionReusableView" forIndexPath:indexPath];
+        header.titleArray = self.titleArray;
+        header.imagesURLStringsArray = self.imagesURLStrings;
+        return header;
+    } else {
+        return [[UICollectionReusableView alloc] initWithFrame:CGRectZero];
     }
-    return _view1;
 }
 
-- (UIView *)view2 {
-    if (_view2 == nil) {
-        _view2 = [[UIView alloc] init];
-        _view2.backgroundColor = UIColor.orangeColor;
-    }
-    return _view2;
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+    return  CGSizeZero;
 }
 
-- (UIScrollView *)scrollview {
-    if (_scrollview == nil) {
-        _scrollview = [[UIScrollView alloc] init];
-        _scrollview.scrollEnabled = YES;
-        _scrollview.backgroundColor = UIColor.blueColor;
-    }
-    return _scrollview;
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return CGSizeMake(ScreenWidth, 600);
 }
--(UIView *)contentView {
-    if (_contentView == nil) {
-        _contentView = [[UIView alloc] init];
-        _contentView.backgroundColor = UIColor.greenColor;
-    }
-    return _contentView;
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (UICollectionView *)collectionView
+{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+        flowLayout.itemSize = CGSizeMake((ScreenWidth-90)/3, 100);
+        flowLayout.minimumLineSpacing = 15;
+        flowLayout.minimumInteritemSpacing = 30;
+        flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        flowLayout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
+        
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,0, ScreenWidth, ScreenHeight - TabbarHeight-NavgationbarHeight) collectionViewLayout:flowLayout];
+        _collectionView.showsHorizontalScrollIndicator = YES;
+        _collectionView.bounces = YES;
+        _collectionView.backgroundColor = UIColor.orangeColor;
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        [_collectionView registerClass:[HomePageCollectionViewCell class] forCellWithReuseIdentifier:@"HomePageCollectionViewCell"];
+        [_collectionView registerClass:[HomePageHeaderCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader  withReuseIdentifier:@"HomePageHeaderCollectionReusableView"];
+    }
+    return _collectionView;
 }
-*/
+  
+
+
 
 @end

@@ -50,6 +50,16 @@
 		3B6C88C627D74A9900C9BAC6 /* APAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C88C327D74A9900C9BAC6 /* APAuthInfo.m */; };
 		3B6C88CA27D74AD000C9BAC6 /* APViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C88C927D74AD000C9BAC6 /* APViewController.m */; };
 		3B6C891827D7502400C9BAC6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6C891727D7500E00C9BAC6 /* libsqlite3.0.tbd */; };
+		3B6C891E27D84D0F00C9BAC6 /* HomePageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C891A27D84D0E00C9BAC6 /* HomePageCollectionViewCell.m */; };
+		3B6C891F27D84D0F00C9BAC6 /* HomePageHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C891B27D84D0E00C9BAC6 /* HomePageHeaderCollectionReusableView.m */; };
+		3B7C04E327D8552600F465FB /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04E127D8552600F465FB /* UIViewExt.m */; };
+		3B7C04E727D894F700F465FB /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04E627D894F700F465FB /* BaseView.m */; };
+		3B7C04EA27D8952400F465FB /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04E927D8952400F465FB /* BaseCollectionViewCell.m */; };
+		3B7C04ED27D895DB00F465FB /* BaseCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04EC27D895DB00F465FB /* BaseCollectionReusableView.m */; };
+		3B7C04F027D8967400F465FB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04EF27D8967400F465FB /* BaseTableViewCell.m */; };
+		3B7C04F327D89A1000F465FB /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04F227D89A1000F465FB /* UserInfoView.m */; };
+		3B7C04F627D89A5E00F465FB /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04F527D89A5E00F465FB /* CellView.m */; };
+		3B7C04F927D89C8400F465FB /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04F727D89C8400F465FB /* UIColor+Hex.m */; };
 		3B9F8AC927CE104E00ACA161 /* PagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8AC827CE104E00ACA161 /* PagingViewController.m */; };
 		3B9F8ACC27CE10C500ACA161 /* PagingViewTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8ACB27CE10C500ACA161 /* PagingViewTableHeaderView.m */; };
 		3B9F8ACF27CE112700ACA161 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8ACE27CE112700ACA161 /* ListViewController.m */; };
@@ -225,6 +235,26 @@
 		3B6C891527D74DF300C9BAC6 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
 		3B6C891627D74DF300C9BAC6 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
 		3B6C891727D7500E00C9BAC6 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3B6C891A27D84D0E00C9BAC6 /* HomePageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageCollectionViewCell.m; sourceTree = "<group>"; };
+		3B6C891B27D84D0E00C9BAC6 /* HomePageHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageHeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		3B6C891C27D84D0E00C9BAC6 /* HomePageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageCollectionViewCell.h; sourceTree = "<group>"; };
+		3B6C891D27D84D0E00C9BAC6 /* HomePageHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		3B7C04E127D8552600F465FB /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		3B7C04E227D8552600F465FB /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		3B7C04E527D894F700F465FB /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		3B7C04E627D894F700F465FB /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		3B7C04E827D8952400F465FB /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
+		3B7C04E927D8952400F465FB /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
+		3B7C04EB27D895DB00F465FB /* BaseCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionReusableView.h; sourceTree = "<group>"; };
+		3B7C04EC27D895DB00F465FB /* BaseCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionReusableView.m; sourceTree = "<group>"; };
+		3B7C04EE27D8967400F465FB /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		3B7C04EF27D8967400F465FB /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		3B7C04F127D89A1000F465FB /* UserInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoView.h; sourceTree = "<group>"; };
+		3B7C04F227D89A1000F465FB /* UserInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
+		3B7C04F427D89A5E00F465FB /* CellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellView.h; sourceTree = "<group>"; };
+		3B7C04F527D89A5E00F465FB /* CellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellView.m; sourceTree = "<group>"; };
+		3B7C04F727D89C8400F465FB /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		3B7C04F827D89C8400F465FB /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		3B9F8AC727CE104E00ACA161 /* PagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingViewController.h; sourceTree = "<group>"; };
 		3B9F8AC827CE104E00ACA161 /* PagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagingViewController.m; sourceTree = "<group>"; };
 		3B9F8ACA27CE10C500ACA161 /* PagingViewTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingViewTableHeaderView.h; sourceTree = "<group>"; };
@@ -366,6 +396,10 @@
 		3B6793BE27CC6F6F00B936DE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3B7C04E227D8552600F465FB /* UIViewExt.h */,
+				3B7C04E127D8552600F465FB /* UIViewExt.m */,
+				3B7C04F827D89C8400F465FB /* UIColor+Hex.h */,
+				3B7C04F727D89C8400F465FB /* UIColor+Hex.m */,
 				3B67943527CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.h */,
 				3B67943627CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m */,
 			);
@@ -397,6 +431,14 @@
 				3B67940E27CC76F700B936DE /* BaseNavigationController.m */,
 				3B67941327CC773700B936DE /* BaseTabBarController.h */,
 				3B67941427CC773700B936DE /* BaseTabBarController.m */,
+				3B7C04E527D894F700F465FB /* BaseView.h */,
+				3B7C04E627D894F700F465FB /* BaseView.m */,
+				3B7C04E827D8952400F465FB /* BaseCollectionViewCell.h */,
+				3B7C04E927D8952400F465FB /* BaseCollectionViewCell.m */,
+				3B7C04EB27D895DB00F465FB /* BaseCollectionReusableView.h */,
+				3B7C04EC27D895DB00F465FB /* BaseCollectionReusableView.m */,
+				3B7C04EE27D8967400F465FB /* BaseTableViewCell.h */,
+				3B7C04EF27D8967400F465FB /* BaseTableViewCell.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -404,6 +446,7 @@
 		3B6793C127CC6FBA00B936DE /* UserAccount */ = {
 			isa = PBXGroup;
 			children = (
+				3B7C04E427D893A500F465FB /* View */,
 				3B67942027CC7C8E00B936DE /* Model */,
 				3B67941B27CC7C6200B936DE /* ViewController */,
 			);
@@ -413,6 +456,7 @@
 		3B67941927CC7C3D00B936DE /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				3B6C891927D84D0E00C9BAC6 /* View */,
 				3B67941F27CC7C8700B936DE /* Model */,
 				3B67941C27CC7C7100B936DE /* ViewController */,
 			);
@@ -631,6 +675,28 @@
 				3B6C891627D74DF300C9BAC6 /* lhash.h */,
 			);
 			path = openssl;
+			sourceTree = "<group>";
+		};
+		3B6C891927D84D0E00C9BAC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B6C891C27D84D0E00C9BAC6 /* HomePageCollectionViewCell.h */,
+				3B6C891A27D84D0E00C9BAC6 /* HomePageCollectionViewCell.m */,
+				3B6C891D27D84D0E00C9BAC6 /* HomePageHeaderCollectionReusableView.h */,
+				3B6C891B27D84D0E00C9BAC6 /* HomePageHeaderCollectionReusableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B7C04E427D893A500F465FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C04F127D89A1000F465FB /* UserInfoView.h */,
+				3B7C04F227D89A1000F465FB /* UserInfoView.m */,
+				3B7C04F427D89A5E00F465FB /* CellView.h */,
+				3B7C04F527D89A5E00F465FB /* CellView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3B9F8AC627CE101700ACA161 /* PagingViewController */ = {
@@ -921,26 +987,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7C04F627D89A5E00F465FB /* CellView.m in Sources */,
+				3B7C04F027D8967400F465FB /* BaseTableViewCell.m in Sources */,
 				3B67942327CC7CA800B936DE /* UserAccountViewController.m in Sources */,
 				3B9F8ACC27CE10C500ACA161 /* PagingViewTableHeaderView.m in Sources */,
 				3B6C88C627D74A9900C9BAC6 /* APAuthInfo.m in Sources */,
 				3B6C88BE27D74A7800C9BAC6 /* openssl_wrapper.m in Sources */,
+				3B6C891E27D84D0F00C9BAC6 /* HomePageCollectionViewCell.m in Sources */,
 				3B6C88BF27D74A7800C9BAC6 /* APRSASigner.m in Sources */,
 				3B9F8ACF27CE112700ACA161 /* ListViewController.m in Sources */,
 				3B67942927CC7CCB00B936DE /* MessageViewController.m in Sources */,
 				3B67943127CCBAB500B936DE /* CXUploadDataModel.m in Sources */,
+				3B7C04EA27D8952400F465FB /* BaseCollectionViewCell.m in Sources */,
+				3B7C04ED27D895DB00F465FB /* BaseCollectionReusableView.m in Sources */,
 				3B67940C27CC76CC00B936DE /* BaseModel.m in Sources */,
 				3B67942627CC7CBA00B936DE /* HomePageViewController.m in Sources */,
+				3B6C891F27D84D0F00C9BAC6 /* HomePageHeaderCollectionReusableView.m in Sources */,
 				3B67940F27CC76F700B936DE /* BaseNavigationController.m in Sources */,
 				3B9F8AC927CE104E00ACA161 /* PagingViewController.m in Sources */,
 				3B67943727CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m in Sources */,
+				3B7C04F927D89C8400F465FB /* UIColor+Hex.m in Sources */,
 				3B67938927C5D6C600B936DE /* ViewController.m in Sources */,
 				3B67942E27CCB33400B936DE /* NetworkEngine.m in Sources */,
 				3B67940927CC76B900B936DE /* BaseViewController.m in Sources */,
 				3B67943427CCBEA700B936DE /* NetworkEngine+NetworkUtil.m in Sources */,
 				3B67941527CC773700B936DE /* BaseTabBarController.m in Sources */,
+				3B7C04E727D894F700F465FB /* BaseView.m in Sources */,
 				3B6C88CA27D74AD000C9BAC6 /* APViewController.m in Sources */,
+				3B7C04F327D89A1000F465FB /* UserInfoView.m in Sources */,
 				3B67938327C5D6C600B936DE /* AppDelegate.m in Sources */,
+				3B7C04E327D8552600F465FB /* UIViewExt.m in Sources */,
 				3B67939427C5D6C800B936DE /* main.m in Sources */,
 				3B67938627C5D6C600B936DE /* SceneDelegate.m in Sources */,
 				3B6C88C527D74A9900C9BAC6 /* APOrderInfo.m in Sources */,
@@ -1162,6 +1238,50 @@
 					"$(PROJECT_DIR)/1701Portal/Class/Pay/AlipaySDK",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JXCategoryView\"",
+					"-framework",
+					"\"JXPagingView\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDCycleScrollView\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.dd.-701Portal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1220,6 +1340,50 @@
 					"$(PROJECT_DIR)/1701Portal/Class/Pay/AlipaySDK",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JXCategoryView\"",
+					"-framework",
+					"\"JXPagingView\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDCycleScrollView\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.dd.-701Portal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

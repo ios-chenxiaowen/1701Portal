@@ -16,8 +16,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self buildView];
 }
-
+- (void)buildView {
+    
+}
 /*
 #pragma mark - Navigation
 

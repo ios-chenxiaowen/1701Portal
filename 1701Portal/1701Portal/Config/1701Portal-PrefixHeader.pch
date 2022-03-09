@@ -12,6 +12,9 @@
 #import "BaseViewController.h"
 #import "BaseNavigationController.h"
 #import "BaseTabBarController.h"
+#import "BaseView.h"
+#import "BaseCollectionViewCell.h"
+#import "BaseCollectionReusableView.h"
 
 #import "Singleton.h"
 #import "ConstantsMacro.h"
@@ -23,10 +26,14 @@
 #import "SDWebImage.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+CXProgressHUD.h"
+#import "SDCycleScrollView.h"
+#import "UIViewExt.h"
 
 #import "CXUploadDataModel.h"
+#import "UIColor+Hex.h"
 
 #import <AlipaySDK/AlipaySDK.h>
+
 
 
 
