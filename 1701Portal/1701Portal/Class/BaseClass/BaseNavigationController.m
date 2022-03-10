@@ -17,18 +17,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //取消导航栏的透明效果
-    self.navigationBar.translucent = NO;
-    self.navigationBar.barStyle = UIBarStyleDefault;
-    //设置导航栏的样式，同时可以改变状态栏字体颜色
-//    self.navigationBar.barStyle = UIBarStyleBlack;
-    
-    //设置背景颜色
-    [self.navigationBar setBarTintColor:[UIColor whiteColor]];
-    //设置标题字体颜色
-    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:18],NSFontAttributeName,nil]];
-    //按钮字体和图标颜色
-    [self.navigationBar setTintColor:[UIColor whiteColor]];
+    [self setNavigationBarHidden:YES];
+//    //取消导航栏的透明效果
+//    self.navigationBar.translucent = NO;
+//    self.navigationBar.barStyle = UIBarStyleDefault;
+//    //设置导航栏的样式，同时可以改变状态栏字体颜色
+//    //self.navigationBar.barStyle = UIBarStyleBlack;
+//
+//    //设置背景颜色
+//    [self.navigationBar setBarTintColor:[UIColor whiteColor]];
+//    //设置标题字体颜色
+//    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:18],NSFontAttributeName,nil]];
+//    //按钮字体和图标颜色
+//    [self.navigationBar setTintColor:[UIColor whiteColor]];
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{

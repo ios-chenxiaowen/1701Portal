@@ -54,7 +54,7 @@
 - (UILabel *)nickNameLab {
     if (_nickNameLab == nil) {
         _nickNameLab = [[UILabel alloc] initWithFrame:CGRectZero];
-        _nickNameLab.textColor = [UIColor colorWithHexString:@"#F5F6F8"];
+        _nickNameLab.textColor = [UIColor colorWithHexString:@"#000000"];
         _nickNameLab.font = kfont(15);
         _nickNameLab.text = @"i想熬完呢";
         _nickNameLab.lineBreakMode = NSLineBreakByTruncatingTail;
@@ -64,7 +64,7 @@
 - (UILabel *)idLab {
     if (_idLab == nil) {
         _idLab = [[UILabel alloc] initWithFrame:CGRectZero];
-        _idLab.textColor = [UIColor colorWithHexString:@"#F5F6F8"];
+        _idLab.textColor = [UIColor colorWithHexString:@"#000000"];
         _idLab.text = @"1231231";
         _idLab.font = kfont(15);
         _idLab.lineBreakMode = NSLineBreakByTruncatingTail;
@@ -89,7 +89,7 @@
         _editBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_editBtn addTarget:self action:@selector(editBtnClick) forControlEvents:UIControlEventTouchUpInside];
         [_editBtn setTitle:@"编辑资料" forState:UIControlStateNormal];
-        [_editBtn setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+        [_editBtn setTitleColor:[UIColor colorWithHexString:@"#000000"] forState:UIControlStateNormal];
         _editBtn.titleLabel.font = kfont(13);
         _editBtn.backgroundColor = UIColor.systemPinkColor;
 //        [_editBtn setImage:[[UIImage imageNamed:GetSkinImageName(@"operation_close")] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];

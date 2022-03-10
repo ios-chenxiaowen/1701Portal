@@ -78,6 +78,38 @@
 #define kLittleSize_11 11
 #define ksmallLittleSize_9 9
 
+
+
+#define TheAppWindow            [[UIApplication sharedApplication].delegate window]
+
+// 安全区，  注：在iOS 11系统下，非刘海屏屏手机的safeArea.top==0，纠正为SYS_STATUSBAR_HEIGHT，iOS 12.0及以上系统正常
+#define SafeAreaInsets  \
+({\
+UIEdgeInsets safeAreaInsets = UIEdgeInsetsZero;\
+if (@available(iOS 11.0, *)) {\
+    safeAreaInsets = [UIApplication sharedApplication].keyWindow.safeAreaInsets;\
+    if (safeAreaInsets.top == 0 && SYS_STATUSBAR_HEIGHT > 0) {\
+    safeAreaInsets = UIEdgeInsetsMake(SYS_STATUSBAR_HEIGHT, safeAreaInsets.left, safeAreaInsets.bottom, safeAreaInsets.right);\
+    }\
+}\
+(safeAreaInsets);\
+})
+
+
+// 标准系统状态栏高度
+#define SYS_STATUSBAR_HEIGHT \
+({\
+    CGFloat statusBarHeight = 0;\
+    if (@available(iOS 13.0, *)) {\
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager;\
+        statusBarHeight = statusBarManager.statusBarFrame.size.height;\
+    } else {\
+        statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;\
+    }\
+    statusBarHeight;\
+})
+
+
 //系统版本号
 //#define kSystemVersion [[UIDevice currentDevice] systemVersion]
 //系统版本判断

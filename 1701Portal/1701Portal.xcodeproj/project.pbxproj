@@ -52,7 +52,6 @@
 		3B6C891827D7502400C9BAC6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6C891727D7500E00C9BAC6 /* libsqlite3.0.tbd */; };
 		3B6C891E27D84D0F00C9BAC6 /* HomePageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C891A27D84D0E00C9BAC6 /* HomePageCollectionViewCell.m */; };
 		3B6C891F27D84D0F00C9BAC6 /* HomePageHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C891B27D84D0E00C9BAC6 /* HomePageHeaderCollectionReusableView.m */; };
-		3B7C04E327D8552600F465FB /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04E127D8552600F465FB /* UIViewExt.m */; };
 		3B7C04E727D894F700F465FB /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04E627D894F700F465FB /* BaseView.m */; };
 		3B7C04EA27D8952400F465FB /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04E927D8952400F465FB /* BaseCollectionViewCell.m */; };
 		3B7C04ED27D895DB00F465FB /* BaseCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04EC27D895DB00F465FB /* BaseCollectionReusableView.m */; };
@@ -60,6 +59,14 @@
 		3B7C04F327D89A1000F465FB /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04F227D89A1000F465FB /* UserInfoView.m */; };
 		3B7C04F627D89A5E00F465FB /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04F527D89A5E00F465FB /* CellView.m */; };
 		3B7C04F927D89C8400F465FB /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04F727D89C8400F465FB /* UIColor+Hex.m */; };
+		3B7C04FD27D9D9D300F465FB /* NaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04FB27D9D9D300F465FB /* NaviBar.m */; };
+		3B7C050027D9DC5F00F465FB /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C04FF27D9DC5F00F465FB /* UIView+Utils.m */; };
+		3B7C050327D9DD9F00F465FB /* UIDevice+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C050227D9DD9F00F465FB /* UIDevice+Util.m */; };
+		3B7C051B27D9E97800F465FB /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C051A27D9E97800F465FB /* MyOrderViewController.m */; };
+		3B7C051E27D9E98600F465FB /* MyCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C051D27D9E98600F465FB /* MyCollectViewController.m */; };
+		3B7C052127D9E99300F465FB /* ShippingAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052027D9E99300F465FB /* ShippingAddressViewController.m */; };
+		3B7C052427D9E99F00F465FB /* ContactInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052327D9E99F00F465FB /* ContactInformationViewController.m */; };
+		3B7C052727D9EC9700F465FB /* MyOrderPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052627D9EC9700F465FB /* MyOrderPageViewController.m */; };
 		3B9F8AC927CE104E00ACA161 /* PagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8AC827CE104E00ACA161 /* PagingViewController.m */; };
 		3B9F8ACC27CE10C500ACA161 /* PagingViewTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8ACB27CE10C500ACA161 /* PagingViewTableHeaderView.m */; };
 		3B9F8ACF27CE112700ACA161 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8ACE27CE112700ACA161 /* ListViewController.m */; };
@@ -239,8 +246,6 @@
 		3B6C891B27D84D0E00C9BAC6 /* HomePageHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageHeaderCollectionReusableView.m; sourceTree = "<group>"; };
 		3B6C891C27D84D0E00C9BAC6 /* HomePageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageCollectionViewCell.h; sourceTree = "<group>"; };
 		3B6C891D27D84D0E00C9BAC6 /* HomePageHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageHeaderCollectionReusableView.h; sourceTree = "<group>"; };
-		3B7C04E127D8552600F465FB /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
-		3B7C04E227D8552600F465FB /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		3B7C04E527D894F700F465FB /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		3B7C04E627D894F700F465FB /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		3B7C04E827D8952400F465FB /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
@@ -255,6 +260,22 @@
 		3B7C04F527D89A5E00F465FB /* CellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellView.m; sourceTree = "<group>"; };
 		3B7C04F727D89C8400F465FB /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		3B7C04F827D89C8400F465FB /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		3B7C04FB27D9D9D300F465FB /* NaviBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviBar.m; sourceTree = "<group>"; };
+		3B7C04FC27D9D9D300F465FB /* NaviBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviBar.h; sourceTree = "<group>"; };
+		3B7C04FE27D9DC5E00F465FB /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		3B7C04FF27D9DC5F00F465FB /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		3B7C050127D9DD9E00F465FB /* UIDevice+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Util.h"; sourceTree = "<group>"; };
+		3B7C050227D9DD9F00F465FB /* UIDevice+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Util.m"; sourceTree = "<group>"; };
+		3B7C051927D9E97800F465FB /* MyOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
+		3B7C051A27D9E97800F465FB /* MyOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
+		3B7C051C27D9E98600F465FB /* MyCollectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectViewController.h; sourceTree = "<group>"; };
+		3B7C051D27D9E98600F465FB /* MyCollectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectViewController.m; sourceTree = "<group>"; };
+		3B7C051F27D9E99300F465FB /* ShippingAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShippingAddressViewController.h; sourceTree = "<group>"; };
+		3B7C052027D9E99300F465FB /* ShippingAddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShippingAddressViewController.m; sourceTree = "<group>"; };
+		3B7C052227D9E99F00F465FB /* ContactInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactInformationViewController.h; sourceTree = "<group>"; };
+		3B7C052327D9E99F00F465FB /* ContactInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactInformationViewController.m; sourceTree = "<group>"; };
+		3B7C052527D9EC9700F465FB /* MyOrderPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderPageViewController.h; sourceTree = "<group>"; };
+		3B7C052627D9EC9700F465FB /* MyOrderPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderPageViewController.m; sourceTree = "<group>"; };
 		3B9F8AC727CE104E00ACA161 /* PagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingViewController.h; sourceTree = "<group>"; };
 		3B9F8AC827CE104E00ACA161 /* PagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagingViewController.m; sourceTree = "<group>"; };
 		3B9F8ACA27CE10C500ACA161 /* PagingViewTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingViewTableHeaderView.h; sourceTree = "<group>"; };
@@ -396,8 +417,10 @@
 		3B6793BE27CC6F6F00B936DE /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				3B7C04E227D8552600F465FB /* UIViewExt.h */,
-				3B7C04E127D8552600F465FB /* UIViewExt.m */,
+				3B7C050127D9DD9E00F465FB /* UIDevice+Util.h */,
+				3B7C050227D9DD9F00F465FB /* UIDevice+Util.m */,
+				3B7C04FE27D9DC5E00F465FB /* UIView+Utils.h */,
+				3B7C04FF27D9DC5F00F465FB /* UIView+Utils.m */,
 				3B7C04F827D89C8400F465FB /* UIColor+Hex.h */,
 				3B7C04F727D89C8400F465FB /* UIColor+Hex.m */,
 				3B67943527CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.h */,
@@ -423,6 +446,7 @@
 		3B6793C027CC6F9D00B936DE /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				3B7C04FA27D9D9D300F465FB /* NavigationBar */,
 				3B67940727CC76B800B936DE /* BaseViewController.h */,
 				3B67940827CC76B900B936DE /* BaseViewController.m */,
 				3B67940A27CC76CB00B936DE /* BaseModel.h */,
@@ -446,6 +470,7 @@
 		3B6793C127CC6FBA00B936DE /* UserAccount */ = {
 			isa = PBXGroup;
 			children = (
+				3B7C050427D9E82E00F465FB /* SecondVC */,
 				3B7C04E427D893A500F465FB /* View */,
 				3B67942027CC7C8E00B936DE /* Model */,
 				3B67941B27CC7C6200B936DE /* ViewController */,
@@ -697,6 +722,160 @@
 				3B7C04F527D89A5E00F465FB /* CellView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3B7C04FA27D9D9D300F465FB /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C04FB27D9D9D300F465FB /* NaviBar.m */,
+				3B7C04FC27D9D9D300F465FB /* NaviBar.h */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		3B7C050427D9E82E00F465FB /* SecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C051527D9E94D00F465FB /* MyOrder */,
+				3B7C051127D9E94D00F465FB /* MyCollect */,
+				3B7C050927D9E94C00F465FB /* ShippingAddress */,
+				3B7C050D27D9E94C00F465FB /* ContactInformation */,
+			);
+			path = SecondVC;
+			sourceTree = "<group>";
+		};
+		3B7C050927D9E94C00F465FB /* ShippingAddress */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C050A27D9E94C00F465FB /* Model */,
+				3B7C050B27D9E94C00F465FB /* View */,
+				3B7C050C27D9E94C00F465FB /* ViewController */,
+			);
+			path = ShippingAddress;
+			sourceTree = "<group>";
+		};
+		3B7C050A27D9E94C00F465FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B7C050B27D9E94C00F465FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B7C050C27D9E94C00F465FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C051F27D9E99300F465FB /* ShippingAddressViewController.h */,
+				3B7C052027D9E99300F465FB /* ShippingAddressViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3B7C050D27D9E94C00F465FB /* ContactInformation */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C050E27D9E94C00F465FB /* Model */,
+				3B7C050F27D9E94C00F465FB /* View */,
+				3B7C051027D9E94C00F465FB /* ViewController */,
+			);
+			path = ContactInformation;
+			sourceTree = "<group>";
+		};
+		3B7C050E27D9E94C00F465FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B7C050F27D9E94C00F465FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B7C051027D9E94C00F465FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C052227D9E99F00F465FB /* ContactInformationViewController.h */,
+				3B7C052327D9E99F00F465FB /* ContactInformationViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3B7C051127D9E94D00F465FB /* MyCollect */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C051227D9E94D00F465FB /* Model */,
+				3B7C051327D9E94D00F465FB /* View */,
+				3B7C051427D9E94D00F465FB /* ViewController */,
+			);
+			path = MyCollect;
+			sourceTree = "<group>";
+		};
+		3B7C051227D9E94D00F465FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B7C051327D9E94D00F465FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B7C051427D9E94D00F465FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C051C27D9E98600F465FB /* MyCollectViewController.h */,
+				3B7C051D27D9E98600F465FB /* MyCollectViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3B7C051527D9E94D00F465FB /* MyOrder */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C051627D9E94D00F465FB /* Model */,
+				3B7C051727D9E94D00F465FB /* View */,
+				3B7C051827D9E94D00F465FB /* ViewController */,
+			);
+			path = MyOrder;
+			sourceTree = "<group>";
+		};
+		3B7C051627D9E94D00F465FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B7C051727D9E94D00F465FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B7C051827D9E94D00F465FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C051927D9E97800F465FB /* MyOrderViewController.h */,
+				3B7C051A27D9E97800F465FB /* MyOrderViewController.m */,
+				3B7C052527D9EC9700F465FB /* MyOrderPageViewController.h */,
+				3B7C052627D9EC9700F465FB /* MyOrderPageViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		3B9F8AC627CE101700ACA161 /* PagingViewController */ = {
@@ -988,6 +1167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7C04F627D89A5E00F465FB /* CellView.m in Sources */,
+				3B7C050327D9DD9F00F465FB /* UIDevice+Util.m in Sources */,
 				3B7C04F027D8967400F465FB /* BaseTableViewCell.m in Sources */,
 				3B67942327CC7CA800B936DE /* UserAccountViewController.m in Sources */,
 				3B9F8ACC27CE10C500ACA161 /* PagingViewTableHeaderView.m in Sources */,
@@ -995,14 +1175,17 @@
 				3B6C88BE27D74A7800C9BAC6 /* openssl_wrapper.m in Sources */,
 				3B6C891E27D84D0F00C9BAC6 /* HomePageCollectionViewCell.m in Sources */,
 				3B6C88BF27D74A7800C9BAC6 /* APRSASigner.m in Sources */,
+				3B7C052127D9E99300F465FB /* ShippingAddressViewController.m in Sources */,
 				3B9F8ACF27CE112700ACA161 /* ListViewController.m in Sources */,
 				3B67942927CC7CCB00B936DE /* MessageViewController.m in Sources */,
 				3B67943127CCBAB500B936DE /* CXUploadDataModel.m in Sources */,
 				3B7C04EA27D8952400F465FB /* BaseCollectionViewCell.m in Sources */,
 				3B7C04ED27D895DB00F465FB /* BaseCollectionReusableView.m in Sources */,
 				3B67940C27CC76CC00B936DE /* BaseModel.m in Sources */,
+				3B7C051B27D9E97800F465FB /* MyOrderViewController.m in Sources */,
 				3B67942627CC7CBA00B936DE /* HomePageViewController.m in Sources */,
 				3B6C891F27D84D0F00C9BAC6 /* HomePageHeaderCollectionReusableView.m in Sources */,
+				3B7C052427D9E99F00F465FB /* ContactInformationViewController.m in Sources */,
 				3B67940F27CC76F700B936DE /* BaseNavigationController.m in Sources */,
 				3B9F8AC927CE104E00ACA161 /* PagingViewController.m in Sources */,
 				3B67943727CCC40A00B936DE /* MBProgressHUD+CXProgressHUD.m in Sources */,
@@ -1014,12 +1197,15 @@
 				3B67941527CC773700B936DE /* BaseTabBarController.m in Sources */,
 				3B7C04E727D894F700F465FB /* BaseView.m in Sources */,
 				3B6C88CA27D74AD000C9BAC6 /* APViewController.m in Sources */,
+				3B7C051E27D9E98600F465FB /* MyCollectViewController.m in Sources */,
 				3B7C04F327D89A1000F465FB /* UserInfoView.m in Sources */,
+				3B7C050027D9DC5F00F465FB /* UIView+Utils.m in Sources */,
 				3B67938327C5D6C600B936DE /* AppDelegate.m in Sources */,
-				3B7C04E327D8552600F465FB /* UIViewExt.m in Sources */,
 				3B67939427C5D6C800B936DE /* main.m in Sources */,
+				3B7C052727D9EC9700F465FB /* MyOrderPageViewController.m in Sources */,
 				3B67938627C5D6C600B936DE /* SceneDelegate.m in Sources */,
 				3B6C88C527D74A9900C9BAC6 /* APOrderInfo.m in Sources */,
+				3B7C04FD27D9D9D300F465FB /* NaviBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

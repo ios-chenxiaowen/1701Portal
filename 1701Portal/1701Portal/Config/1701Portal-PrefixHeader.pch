@@ -27,11 +27,13 @@
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+CXProgressHUD.h"
 #import "SDCycleScrollView.h"
-#import "UIViewExt.h"
+#import "UIView+Utils.h"
+#import "UIDevice+Util.h"
 
 #import "CXUploadDataModel.h"
 #import "UIColor+Hex.h"
 
+#import "PagingViewController.h"
 #import <AlipaySDK/AlipaySDK.h>
 
 

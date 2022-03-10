@@ -30,14 +30,12 @@
     
     [self.view addSubview:self.collectionView];
 }
-//- (void)buildView {
-//
-//    
-//    
-//    
-//    
-//    
-//}
+- (void)bulidNavBar {
+    self.isShowBackBtn = YES;
+    [super bulidNavBar];
+    self.navBar.titleLabel.text = @"首页";
+    
+}
 
 
 
@@ -92,7 +90,7 @@
         flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
         flowLayout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
         
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,0, ScreenWidth, ScreenHeight - TabbarHeight-NavgationbarHeight) collectionViewLayout:flowLayout];
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,NavgationbarHeight, ScreenWidth, ScreenHeight - TabbarHeight-NavgationbarHeight) collectionViewLayout:flowLayout];
         _collectionView.showsHorizontalScrollIndicator = YES;
         _collectionView.bounces = YES;
         _collectionView.backgroundColor = UIColor.orangeColor;

@@ -9,6 +9,7 @@
 
 @implementation CellView
 - (void)buildView {
+
     
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick)];
     [self addGestureRecognizer:tap];
@@ -41,8 +42,8 @@
 }
 
 - (void)tapClick {
-    if (self.btnBlock) {
-        self.btnBlock();
+    if (self.tapBlock) {
+        self.tapBlock(self);
     }
 }
 
@@ -50,7 +51,7 @@
 - (UILabel *)titleLab {
     if (_titleLab == nil) {
         _titleLab = [[UILabel alloc] initWithFrame:CGRectZero];
-        _titleLab.textColor = [UIColor colorWithHexString:@"#F5F6F8"];
+        _titleLab.textColor = [UIColor colorWithHexString:@"#000000"];
         _titleLab.font = kfont(15);
         _titleLab.textAlignment = NSTextAlignmentCenter;
     }
@@ -60,7 +61,7 @@
     if (_bcView == nil) {
         _bcView = [[UIView alloc] initWithFrame:CGRectZero];
         _bcView.layer.masksToBounds = YES;
-        _bcView.layer.cornerRadius = 5.0;
+        _bcView.layer.cornerRadius = 30.0;
         _bcView.layer.borderWidth = 1;
         _bcView.layer.borderColor = kMoneyColor.CGColor;
     }

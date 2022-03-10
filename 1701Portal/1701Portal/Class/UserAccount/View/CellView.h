@@ -8,12 +8,14 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@class CellView;
+typedef void (^TapBlock)(CellView * cellView);
 
 @interface CellView : BaseView
 @property (nonatomic, strong)UIView  * bcView;
 @property (nonatomic, strong)UILabel * titleLab;
 @property (nonatomic, strong)UIImageView * rightImage;
-@property (nonatomic, copy)BtnClickBlock btnBlock;
+@property (nonatomic, copy)TapBlock tapBlock;
 @end
 
 
