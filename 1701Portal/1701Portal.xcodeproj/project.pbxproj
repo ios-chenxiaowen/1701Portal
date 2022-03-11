@@ -67,6 +67,10 @@
 		3B7C052127D9E99300F465FB /* ShippingAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052027D9E99300F465FB /* ShippingAddressViewController.m */; };
 		3B7C052427D9E99F00F465FB /* ContactInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052327D9E99F00F465FB /* ContactInformationViewController.m */; };
 		3B7C052727D9EC9700F465FB /* MyOrderPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052627D9EC9700F465FB /* MyOrderPageViewController.m */; };
+		3B7C052A27DAF0FC00F465FB /* LiveHouseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052927DAF0FC00F465FB /* LiveHouseTableViewCell.m */; };
+		3B7C052D27DB2BE300F465FB /* LookOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052C27DB2BE300F465FB /* LookOrderViewController.m */; };
+		3B7C053027DB2D0600F465FB /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C052F27DB2D0600F465FB /* InfoView.m */; };
+		3B7C053327DB3D3300F465FB /* PerfectInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C053227DB3D3300F465FB /* PerfectInformationViewController.m */; };
 		3B9F8AC927CE104E00ACA161 /* PagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8AC827CE104E00ACA161 /* PagingViewController.m */; };
 		3B9F8ACC27CE10C500ACA161 /* PagingViewTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8ACB27CE10C500ACA161 /* PagingViewTableHeaderView.m */; };
 		3B9F8ACF27CE112700ACA161 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F8ACE27CE112700ACA161 /* ListViewController.m */; };
@@ -276,6 +280,14 @@
 		3B7C052327D9E99F00F465FB /* ContactInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactInformationViewController.m; sourceTree = "<group>"; };
 		3B7C052527D9EC9700F465FB /* MyOrderPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderPageViewController.h; sourceTree = "<group>"; };
 		3B7C052627D9EC9700F465FB /* MyOrderPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderPageViewController.m; sourceTree = "<group>"; };
+		3B7C052827DAF0FC00F465FB /* LiveHouseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveHouseTableViewCell.h; sourceTree = "<group>"; };
+		3B7C052927DAF0FC00F465FB /* LiveHouseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveHouseTableViewCell.m; sourceTree = "<group>"; };
+		3B7C052B27DB2BE300F465FB /* LookOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookOrderViewController.h; sourceTree = "<group>"; };
+		3B7C052C27DB2BE300F465FB /* LookOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookOrderViewController.m; sourceTree = "<group>"; };
+		3B7C052E27DB2D0600F465FB /* InfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		3B7C052F27DB2D0600F465FB /* InfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		3B7C053127DB3D3300F465FB /* PerfectInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerfectInformationViewController.h; sourceTree = "<group>"; };
+		3B7C053227DB3D3300F465FB /* PerfectInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerfectInformationViewController.m; sourceTree = "<group>"; };
 		3B9F8AC727CE104E00ACA161 /* PagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingViewController.h; sourceTree = "<group>"; };
 		3B9F8AC827CE104E00ACA161 /* PagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagingViewController.m; sourceTree = "<group>"; };
 		3B9F8ACA27CE10C500ACA161 /* PagingViewTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingViewTableHeaderView.h; sourceTree = "<group>"; };
@@ -863,6 +875,10 @@
 		3B7C051727D9E94D00F465FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B7C052827DAF0FC00F465FB /* LiveHouseTableViewCell.h */,
+				3B7C052927DAF0FC00F465FB /* LiveHouseTableViewCell.m */,
+				3B7C052E27DB2D0600F465FB /* InfoView.h */,
+				3B7C052F27DB2D0600F465FB /* InfoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -870,10 +886,14 @@
 		3B7C051827D9E94D00F465FB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3B7C051927D9E97800F465FB /* MyOrderViewController.h */,
-				3B7C051A27D9E97800F465FB /* MyOrderViewController.m */,
 				3B7C052527D9EC9700F465FB /* MyOrderPageViewController.h */,
 				3B7C052627D9EC9700F465FB /* MyOrderPageViewController.m */,
+				3B7C051927D9E97800F465FB /* MyOrderViewController.h */,
+				3B7C051A27D9E97800F465FB /* MyOrderViewController.m */,
+				3B7C052B27DB2BE300F465FB /* LookOrderViewController.h */,
+				3B7C052C27DB2BE300F465FB /* LookOrderViewController.m */,
+				3B7C053127DB3D3300F465FB /* PerfectInformationViewController.h */,
+				3B7C053227DB3D3300F465FB /* PerfectInformationViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1180,10 +1200,12 @@
 				3B67942927CC7CCB00B936DE /* MessageViewController.m in Sources */,
 				3B67943127CCBAB500B936DE /* CXUploadDataModel.m in Sources */,
 				3B7C04EA27D8952400F465FB /* BaseCollectionViewCell.m in Sources */,
+				3B7C053027DB2D0600F465FB /* InfoView.m in Sources */,
 				3B7C04ED27D895DB00F465FB /* BaseCollectionReusableView.m in Sources */,
 				3B67940C27CC76CC00B936DE /* BaseModel.m in Sources */,
 				3B7C051B27D9E97800F465FB /* MyOrderViewController.m in Sources */,
 				3B67942627CC7CBA00B936DE /* HomePageViewController.m in Sources */,
+				3B7C052A27DAF0FC00F465FB /* LiveHouseTableViewCell.m in Sources */,
 				3B6C891F27D84D0F00C9BAC6 /* HomePageHeaderCollectionReusableView.m in Sources */,
 				3B7C052427D9E99F00F465FB /* ContactInformationViewController.m in Sources */,
 				3B67940F27CC76F700B936DE /* BaseNavigationController.m in Sources */,
@@ -1205,7 +1227,9 @@
 				3B7C052727D9EC9700F465FB /* MyOrderPageViewController.m in Sources */,
 				3B67938627C5D6C600B936DE /* SceneDelegate.m in Sources */,
 				3B6C88C527D74A9900C9BAC6 /* APOrderInfo.m in Sources */,
+				3B7C052D27DB2BE300F465FB /* LookOrderViewController.m in Sources */,
 				3B7C04FD27D9D9D300F465FB /* NaviBar.m in Sources */,
+				3B7C053327DB3D3300F465FB /* PerfectInformationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

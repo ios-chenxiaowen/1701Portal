@@ -34,6 +34,8 @@
 #define XibView(nibName)[[[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil] objectAtIndex:0]
 
 
+#define STR_FORMAT(a, ...)     [NSString stringWithFormat:a, ##__VA_ARGS__]
+
 #define MBHUD_Show [MBProgressHUD showHUDAddedTo:kKeyWindow animated:YES];
 #define MBHUD_Hide [MBProgressHUD hideAllHUDsForView:kKeyWindow animated:YES];
 

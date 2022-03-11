@@ -7,10 +7,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    MyOrderTypeLiveHouse = 0,//livehouse
+    MyOrderTypeRecording, //录音混音
+    MyOrderTypeCurriculum//课程
+} MyOrderType;
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyOrderViewController : UIViewController
-
+@interface MyOrderViewController : BaseViewController
+@property (nonatomic, assign)MyOrderType orderType;
 @end
 
 NS_ASSUME_NONNULL_END
